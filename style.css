@@ -54,7 +54,7 @@ body {
 	margin-top: 1.5em;
 }
 
-.content p {
+.content .caution {
 	font-style: italic;
 }
 
@@ -69,6 +69,7 @@ form {
 	padding: 1em;
 	display: flex;
 	flex-flow: column;
+	gap: 1em;
 }
 
 label {
@@ -76,11 +77,37 @@ label {
 	color: #3A3A3A;
 }
 input {
+	appearance: none;
+/*
 	margin-bottom: 1.5em;
+*/
 	display: block;
 	width: 80%;
 	height: 2em;
 	border-radius: 5px;
+	padding: 0 0.5em;
+}
+
+input:focus {
+	outline: none;
+	box-shadow: inset 1px 1px 0 grey;
+}
+
+
+
+
+input:focus:invalid {
+	border: 1px solid red;
+}
+
+input:focus:valid {
+	border: 1px solid green;
+}
+
+.error::after {
+	content: "*Passwords do not match";
+	color:red;
+	
 }
 
 button {
@@ -91,11 +118,19 @@ button {
 	background: #596D48;
 	color: white;
 	font-size: 0.90em;
-	font-weight: 
+	font-weight: 700;
 }
 
 p {
 	margin: 1em;
+	font-family: sans;
+	font-size: 1em;
+}
+
+p a {
+	color: #596D48;
+	font-weight: 600;
+	text-decoration: none;
 }
 
 @media screen and (min-width: 756px) {
