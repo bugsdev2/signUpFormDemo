@@ -17,6 +17,8 @@ body {
 	flex-flow: column;
 }
 
+
+
 .logo-shader {
 	background: rgba(0,0,0,0.4);
 	margin-top: 2em;
@@ -48,10 +50,23 @@ body {
 	background-position: center;
 	width: 100vw;
 	height: 30vh;
+	display:flex;
+	flex-flow:column;
+	justify-content: space-between;
+}
+
+.bg :is(p,a) {
+	color: white;
+	text-align:center;
+	margin: 0.5em 0;
+	font-size: 0.75rem;
 }
 
 .content {
 	margin-top: 1.5em;
+	display:flex;
+	flex-flow: column;
+	justify-content: space-evenly;
 }
 
 .content .caution {
@@ -78,9 +93,6 @@ label {
 }
 input {
 	appearance: none;
-/*
-	margin-bottom: 1.5em;
-*/
 	display: block;
 	width: 80%;
 	height: 2em;
@@ -124,7 +136,7 @@ button {
 p {
 	margin: 1em;
 	font-family: sans;
-	font-size: 1em;
+	font-size: 0.9em;
 }
 
 p a {
@@ -154,5 +166,9 @@ p a {
 	
 	.logo-shader {
 		margin-top: 7em;
+	}
+	
+	.bg :is(p,a) {
+		margin-bottom: 1em;
 	}
 }
