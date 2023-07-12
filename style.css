@@ -59,7 +59,7 @@ body {
 	color: white;
 	text-align:center;
 	margin: 0.5em 0;
-	font-size: 0.75rem;
+	font-size: 0.60rem;
 }
 
 .content {
@@ -74,7 +74,7 @@ body {
 }
 
 .content h3 {
-	color: #202020;
+	color: #444444;
 	margin: 0.5em 0.5em;
 }
 
@@ -96,7 +96,7 @@ label {
 input {
 	appearance: none;
 	display: block;
-	width: 80%;
+	width: 100%;
 	height: 2em;
 	border-radius: 5px;
 	padding: 0 0.5em;
@@ -155,8 +155,12 @@ p a {
 	}
 	
 	.bg {
-		width: 60vw;
+		width: 50vw;
 		height: 100vh;
+	}
+	
+	input {
+		width: 70%;
 	}
 	
 	form {
